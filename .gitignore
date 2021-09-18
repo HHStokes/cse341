@@ -1,0 +1,22 @@
+git# Node build artifacts
+node_modules
+npm-debug.log
+public
+routes
+views
+app.json
+index.js
+message.txt
+package-lock.json
+package.json
+Procfile
+README.md
+test.js
+# Local development
+*.env
+*.dev
+.DS_Store
+
+# Docker
+Dockerfile
+docker-compose.yml
