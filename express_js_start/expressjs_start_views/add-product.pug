@@ -1,0 +1,13 @@
+extends layouts/main-layout.pug
+//- block styles would go here, or whatever
+block content 
+    form.product__form(action="/admin/product", method="POST")
+        div.form__control
+            label(for="title") Product Name
+            input(type="text", name="title")#title
+            label(for="price") Product Price
+            input(type="text", name="price")#price
+            label(for="description") Product Description
+            input(type="text", name="description")#description
+
+        button(type="submit") Add Product

@@ -1,0 +1,18 @@
+extends layouts/main-layout.pug
+
+block content 
+    .grid 
+        if proList.length > 0
+            each storeItem in proList 
+                article.card.product-item 
+                    header.card__header
+                        h1.product__title  #{storeItem.title}
+                    div.card__image
+                        img(src="/expressjs_start_views/photos/how_to_be_cool.jpg", alt="A super cool book")
+                    div.card__content
+                        h2.product__price $#{storeItem.price}
+                        p.product__description  #{storeItem.description}
+                    .card__actions 
+                        button.btn Add To Cart
+        else 
+            h1 Sorry, we are out of merchandise 

@@ -1,0 +1,122 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: #c8c8c8; 
+
+}
+
+h1 {
+    font-size: large;
+    font-weight: 400;
+    padding: 0.5%;
+    background-color: #404080;
+    color: #d0d0d0
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    font-size: large;
+    font-weight: 400;
+    background-color: #a585b5;
+    color: #d0d0d0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding:0%
+
+}
+.active{
+    color: yellowgreen;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.card {
+  box-shadow: 0 2px 8px #4d4d4d;
+  align-items: center;
+}
+
+.card__header,
+.card__content {
+  padding: 1rem;
+}
+
+.card__header h1,
+.card__content h1,
+.card__content h2,
+.card__content p {
+  margin: 0;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__image img {
+  width: 100%;
+  align-self: center;
+}
+
+.card__actions {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card__actions button,
+.card__actions a {
+    margin: 0 0.25rem;
+}
+
+.product__form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+}
+
+.product__item {
+    width: 20rem;
+    max-width: 95%;
+}
+
+.product__title {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.product__price {
+    text-align: center;
+    color: #4d4d4d;
+    margin-bottom: 0.5rem;
+}
+
+.product__description {
+    text-align: center;
+}
+
+.form__control {
+    margin: 1rem 0;
+}
+
+.form__control label,
+.form__control input {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.form__control input {
+    border: 1px solid #a1a1a1;
+    font: inherit;
+    border-radius: 2px;
+}
+
+.form-control button {
+    outline-color: #404080;
+}
